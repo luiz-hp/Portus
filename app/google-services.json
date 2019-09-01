@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "156009834156",
+    "firebase_url": "https://fir-teste1-ce231.firebaseio.com",
+    "project_id": "fir-teste1-ce231",
+    "storage_bucket": "fir-teste1-ce231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156009834156:android:f4ed520e54e9d66b",
+        "android_client_info": {
+          "package_name": "tcc.com.portus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156009834156-ot5v8ctu89cnuavcqve637nen93kr3el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tcc.com.portus",
+            "certificate_hash": "02fa686ae5d211bfa0b4ba51005feeffbe588813"
+          }
+        },
+        {
+          "client_id": "156009834156-rntrdh6b2i2hugm6ep2h8tntn5uhr6e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4XOKeUMeXTZsrLQ-psPeMg21gqrLCZCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156009834156-rntrdh6b2i2hugm6ep2h8tntn5uhr6e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
