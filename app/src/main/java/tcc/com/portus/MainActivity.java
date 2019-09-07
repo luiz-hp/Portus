@@ -1,6 +1,7 @@
 package tcc.com.portus;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.hardware.biometrics.BiometricPrompt;
 import android.os.CancellationSignal;
 import android.support.v7.app.AppCompatActivity;
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 Toast.makeText(MainActivity.this, "Autenticado", Toast.LENGTH_LONG).show();
+                                abrirControle();
                             }
                         });
                     }
@@ -66,22 +68,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        dados = FirebaseDatabase.getInstance().getReference();
 
-        Firebase.setAndroidContext(this);
+    }
 
-        bt = findViewById(R.id.botao);
-        edt = findViewById(R.id.entrada_dados);
-
-        meuFirebase = new Firebase("https://fir-teste1-ce231.firebaseio.com/");
-
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                string_dados = edt.getText().toString();
-                Firebase no_1 = meuFirebase.child("led");
-                no_1.setValue(string_dados);
-            }
-        });
+    public void abrirControle(){
+        Intent intent = new Intent(this,Controle.class);
+        startActivity(intent);
     }
 }
